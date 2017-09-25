@@ -1,0 +1,66 @@
+
+:q	Quit vim editor
+:q!	Quit vim without saving changes
+:w <filename> 	Save a file with filename
+:wq	Save and Quit the file
+Esc	To escape any mode/switch modes
+
+Original Vim navigation
+
+J	Down
+K	Up
+L	Right
+H	Left
+X	Backspace(Outside of insert mode)
+x	Del(Outside of insert mode)
+
+Copy Paste (Visual Mode)
+
+V	Visual Mode
+Y	Copy(Yank segment of text)
+P	Paste
+U	Undo
+
+Cut Paste
+
+:put	insert a new line outside of INSERT mode. (If something copied in visual mode, or cut, it will be pasted.)
+DD	Cut a line (for pasting it later. Always puts the deleted lines inside of a buffer incase you want to paste them later,.)
+	(But first doing DD on a non empty line and then on a blank line causes loss of buffer)
+
+Vim used for opening large text files(Multiple GBs in size), which other editors open slowly. Nut unlike other GUI, Vim has no scroll options. But there are a few commands to help.
+
+GG	top of file
+Shift+G	bottom of file
+<Line No.> GG	Navigate to that position (<Line No.>)
+
+
+
+Search text in vim
+
+
+/<Word/Phrase>	Search for the <Word/Phrase> from the top, Hit N for next occurrence
+?<Word/Phrase>	Search for <Word/Phrase> from the bottom, Hit N for previous occurrence
+Shift+8		Take the cursor to the word you want to search, Type Shift+8 ..... It takes you to first occurrence of it. Each successive Shif			t+8 takes you to the next occurrence
+
+
+Find and Replace
+
+:%s/<Word/Phrase>/<Replacement>		Replace without confirmation
+:%s/<Word/Phrase>/<Replacement>/c	Replace with confirmation
+
+:split 		split window into two buffers----Ctrl+W-go to bottom buffer,Ctrl+WH-go to bottom buffer
+:vsplit		split window into two vertical buffers-----Ctrl+H and Ctrl+L accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
